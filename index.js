@@ -32,9 +32,10 @@ function reset() {
 
 function render() {
   const state = db.getState()
+  console.log(state.items)
   const str = JSON.stringify(state, null, 2)
   document.getElementById('state').innerHTML = str
-  console.log(str)
+  // console.log(str)
 }
 
 document.getElementById('reset').onclick = function() {
